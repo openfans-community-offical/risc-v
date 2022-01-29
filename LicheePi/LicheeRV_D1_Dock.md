@@ -96,3 +96,10 @@ systemctl set-default graphical.target
 ```
 systemctl set-default  multi-user.target
 ```
+
+**immediately**
+
+```
+systemctl isolate multi-user.target
+systemctl isolate graphical.target
+```
