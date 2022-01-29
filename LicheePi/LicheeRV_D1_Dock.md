@@ -76,9 +76,23 @@ systemctl is-enabled wifi-connect.service
 
 #### PS:
 
-aliyun risc-v repo:
+- aliyun risc-v repo:
 
 ```
 deb https://mirrors.aliyun.com/debian-ports/ sid main
 deb https://mirrors.aliyun.com/debian-ports/ unreleased main
+```
+
+- change run level
+
+**graphical.target**
+
+```
+systemctl set-default graphical.target
+```
+
+** multi-user.target**
+
+```
+systemctl set-default  multi-user.target
 ```
