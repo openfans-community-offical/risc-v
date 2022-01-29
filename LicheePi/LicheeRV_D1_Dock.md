@@ -42,6 +42,12 @@ dhclient &
 exit 0
 ```
 
+then
+
+```
+chmod +x /usr/sbin/wifi_connect.sh
+```
+
 - 2.3 Add file : **/lib/systemd/system/wifi-connect.service**
 
 ``` 
