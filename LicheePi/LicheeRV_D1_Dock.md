@@ -2,7 +2,21 @@
 
 **Image:** 20211230_LicheeRV_debian_d1_hdmi_8723ds.img
 
-Edit file: **/etc/wifi/wpa_supplicant.conf**
+- **user:** sipeed
+
+- **password:** licheepi
+
+----
+
+#### 1. Enable Wifi
+
+- (1) Click "**Start**" -> "**Preferences**" -> "**Connman Settings**" for open window:
+
+- (2) "**Enable**" WiFi for "**OPEN**"
+
+#### 2. Scripts and conf
+
+- 2.1 Edit file: **/etc/wifi/wpa_supplicant.conf**
 
 ```
 ctrl_interface=/etc/wifi/sockets
@@ -16,7 +30,7 @@ psk="0123456789"
 }
 ```
 
-Add file: **/usr/sbin/wifi_connect.sh**
+- 2.2 Add file: **/usr/sbin/wifi_connect.sh**
 
 ```
 #!/bin/bash
@@ -28,7 +42,7 @@ dhclient &
 exit 0
 ```
 
-Add file : **/lib/systemd/system/wifi-connect.service**
+- 2.3 Add file : **/lib/systemd/system/wifi-connect.service**
 
 ``` 
 [Unit]
@@ -47,7 +61,7 @@ RestartSec=30s
 WantedBy=multi-user.target
 ```
 
-Enable Wifi Connect AutoStart
+- 2.4 Enable Wifi Connect AutoStart
 
 ```
 systemctl enable wifi-connect.service
