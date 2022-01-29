@@ -91,7 +91,7 @@ deb https://mirrors.aliyun.com/debian-ports/ unreleased main
 systemctl set-default graphical.target
 ```
 
-** multi-user.target**
+**multi-user.target**
 
 ```
 systemctl set-default  multi-user.target
