@@ -73,3 +73,12 @@ WantedBy=multi-user.target
 systemctl enable wifi-connect.service
 systemctl is-enabled wifi-connect.service
 ```
+
+#### PS:
+
+aliyun risc-v repo:
+
+```
+deb https://mirrors.aliyun.com/debian-ports/ sid main
+deb https://mirrors.aliyun.com/debian-ports/ unreleased main
+```
