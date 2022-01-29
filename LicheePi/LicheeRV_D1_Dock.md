@@ -74,16 +74,16 @@ systemctl enable wifi-connect.service
 systemctl is-enabled wifi-connect.service
 ```
 
-#### PS:
+## PS:
 
-- aliyun risc-v repo:
+#### aliyun risc-v repo:
 
 ```
 deb https://mirrors.aliyun.com/debian-ports/ sid main
 deb https://mirrors.aliyun.com/debian-ports/ unreleased main
 ```
 
-- change run level
+#### change run level
 
 **graphical.target**
 
