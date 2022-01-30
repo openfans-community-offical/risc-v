@@ -25,8 +25,8 @@ disable_scan_offload=1
 update_config=1
 wowlan_triggers=any
 network={
-ssid="XXXXXX"
-psk="0123456789"
+ssid="WIFI SSID NAME"
+psk="WIFI PASSWORD"
 }
 ```
 
