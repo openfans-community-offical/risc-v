@@ -56,10 +56,7 @@ Description=wifi connect
 After=ssh.service
 
 [Service]
-Type=notify
 ExecStart=/usr/sbin/wifi_connect.sh
-ExecReload=/bin/kill -HUP $MAINPID
-KillMode=process
 
 [Install]
 WantedBy=multi-user.target
