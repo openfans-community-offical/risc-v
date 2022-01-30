@@ -53,9 +53,11 @@ chmod +x /usr/sbin/wifi_connect.sh
 ``` 
 [Unit]
 Description=wifi connect
-After=ssh.service
+Requires=network.target
+After=network.target
 
 [Service]
+Type=forking
 ExecStart=/usr/sbin/wifi_connect.sh
 
 [Install]
