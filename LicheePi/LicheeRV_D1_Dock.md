@@ -35,6 +35,8 @@ psk="0123456789"
 ```
 #!/bin/bash
 ## custom network conf
+rm -rf /etc/wifi/sockets/wlan0 2>/dev/null
+ifconfig wlan0 down 2>/dev/null
 ifconfig wlan0 up &
 wpa_supplicant -B -D nl80211 -i wlan0 -c /etc/wifi/wpa_supplicant.conf &
 sleep 5
