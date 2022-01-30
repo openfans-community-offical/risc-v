@@ -60,8 +60,6 @@ Type=notify
 ExecStart=/usr/sbin/wifi_connect.sh
 ExecReload=/bin/kill -HUP $MAINPID
 KillMode=process
-Restart=on-failure
-RestartSec=30s
 
 [Install]
 WantedBy=multi-user.target
